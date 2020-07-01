@@ -1,0 +1,82 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+ }
+#drop-content{
+    display: none;
+ }
+ #drop{
+    color: #ffffff;
+    width: 50px;  
+    
+ }
+ i{
+    text-decoration: none;
+ }
+ .dropname{
+   font-family: 'Armata', sans-serif;
+   font-size: larger;
+ }
+ 
+ #drop:hover  #drop-content{
+    display: block;
+    z-index: 2;
+    color: white;
+    background-color: aqua;
+    margin-top: 40px;
+    width: 130px;
+    border-right: rgb(40, 14, 134) solid;
+    border-bottom: rgb(40, 14, 134) solid;
+ }
+ #drop-content:hover{
+   display: block;
+   
+ }
+ 
+ #logo{
+    position: fixed;
+    width: initial;
+    top: 50px;
+    z-index: 1;
+ }
+ #navbar{
+    position: fixed;
+    height: 40px;
+    z-index: 2;
+    background-color: rgb(40, 14, 134);
+    display: flex;
+    width: 330px;
+    border-right: #EB8100 solid;
+    border-bottom: #EB8100 solid;
+ } 
+
+ #footer{
+    background-image: url("img/bg2.jpg");
+    background-size: 100% 100% ;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(198, 232, 243);
+    font-family: 'Roboto', sans-serif;
+
+ } 
+ #footer a{
+    color: rgb(198, 232, 243, 0.5);
+ }
+ footer a:hover{
+    color: white;
+ }
+ a{
+   text-decoration: none;
+   cursor: pointer;
+ }
+ a:hover{
+    color: white !important;
+ }
+ .download{
+    padding: 10px;
+ }
+
+

@@ -1,0 +1,200 @@
+/* *{
+    border:red solid;
+    
+} */
+body, html{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#banner{
+    width: 100%;
+    z-index: 0;
+}
+b{
+    font-family: 'Orbitron', sans-serif;
+
+}
+#cover {
+   
+    position: relative;
+ }
+/* #headln {
+    float: left;
+    position: absolute;
+    left: 50%;
+    bottom: 10% ;
+    z-index: 1;
+    padding: 5px;
+    color: #FFFFFF;
+    font-weight: bold; 
+ } */
+ #content-menu{
+    display: flex;
+    width: 73%;
+    justify-content: space-between;
+    float: left;
+    position: absolute;
+    left: 25%;
+    bottom: 3%;
+    align-content: flex-end;
+    height: 30%;
+    background-image: url("img/bgbutton.png");
+    background-size: 100% 100%;
+    
+   
+ }
+ #drop-content{
+    display: none;
+ }
+ #drop{
+    color: #ffffff;
+    width: 50px;  
+    
+ }
+ i{
+    text-decoration: none;
+ }
+ .dropname{
+   font-family: 'Armata', sans-serif;
+   font-size: larger;
+ }
+ 
+ #drop:hover  #drop-content{
+    display: block;
+    z-index: 2;
+    color: white;
+    background-color: aqua;
+    margin-top: 40px;
+    width: 130px;
+    border-right: rgb(40, 14, 134) solid;
+    border-bottom: rgb(40, 14, 134) solid;
+ }
+ #drop-content:hover{
+   display: block;
+   
+ }
+ 
+ #logo{
+    position: fixed;
+    width: initial;
+    top: 50px;
+    z-index: 1;
+ }
+ #navbar{
+    position: fixed;
+    height: 40px;
+    z-index: 2;
+    background-color: rgb(40, 14, 134);
+    display: flex;
+    width: 330px;
+    border-right: #EB8100 solid;
+    border-bottom: #EB8100 solid;
+ } 
+ 
+
+ #valk, #boss, #attack{
+    /* box-shadow: 5px 10px 8px 10px #0099cc; */
+    width: 80%;
+    height: 80%;
+    background-size: 100% 100%;
+    margin: 9%;
+    color: rgb(198, 232, 243, 0);
+    font-family: 'Armata', sans-serif;
+    font-size: larger;
+    
+ }
+ #valk:hover, #boss:hover, #attack:hover{
+    /* border: #08FFD8 solid ; */
+    box-shadow: 0 0;
+    color: white;
+    box-shadow: 0 0 10px #00c3ff;
+    
+ }
+ #valk:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/valk.jpg");
+    background-size: 100% 100%;
+}
+ #boss:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/boss.jpg");
+    background-size: 100% 100%;
+ }
+ #attack :hover{
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/attack.jpg");
+   background-size: 100% 100%;
+ }
+
+
+ #valk{
+    background-image: url("img/valk.jpg");
+ }
+ #boss{
+    background-image: url("img/boss.jpg");
+ }
+ #attack{
+    background-image: url("img/attack.jpg");
+ }
+
+ 
+ #overview{
+     background-image: url("img/bannerwvalk.png");
+     position: relative;
+     background-size: 100% 100%;
+     width: 100%;
+     
+     font-size: larger;
+     color: white;
+     
+     background-repeat: no-repeat;
+ }
+ #bgovv{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(4px);
+ }
+ #ovtxt{
+    padding-top: 5%;
+    padding-left: 40%;
+    padding-right: 3%;
+    padding-bottom: 10%;
+    width: 57%;
+    height: 85%;
+ }
+ h1.ovvtext{
+   font-family: 'MuseoModerno', cursive;
+
+ }
+ p.ovvtext{
+   font-family: 'Mukta', sans-serif;
+ }
+ #footer{
+    background-image: url("img/bg2.jpg");
+    background-size: 100% 100% ;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(198, 232, 243);
+    font-family: 'Roboto', sans-serif;
+
+ } 
+ #footer a{
+    color: rgb(198, 232, 243, 0.5);
+ }
+ footer a:hover{
+    color: white;
+ }
+ a{
+   text-decoration: none;
+   cursor: pointer;
+ }
+ a:hover{
+    color: white !important;
+ }
+ .download{
+    padding: 10px;
+ }

@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valk.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/089057264f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="navbar">
+        <div id="drop">
+            <i class="fas fa-align-justify" >
+                <div id="drop-content">
+                    <a class="dropname" href="valk.html">Valkyries</a>
+                    <a class="dropname" href="boss.html">Honkai Boss</a>
+                    <a class="dropname" href="attackmode.css">Abyss</a>
+                </div>
+            </i>
+        </div>
+        <a style="font-family: 'Orbitron', sans-serif; font-size:30px; color: white" href="home.html"><b>Honkai Impact 3</b> </a>
+    </div>
+    <img id="logo" src="img\logo.png" alt="">
+
+    <div id="banner">
+        <img src="img/ritateri.jpg" alt="">
+        <div id="intro">
+            Valkyries. Warriors of Schicksal, the most powerful organization on Earth. The lithe bodies of these young girls are imbued with the very genes capable of countering the embodiment of chaos.
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="valk">
+        <div id="filter" class="filter">
+            <div id="typecb">
+                <h1>Type</h1>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="mech">Mech
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="bio">Biologic
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="psy">Psychic
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="quantum">Quantum
+                    </label>
+                </div>
+            </div>
+            
+            <div id="valkcb">
+                <h1>Valkyries</h1>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="kiana">Kiana
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="mei">Mei
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="bronya">Bronya
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="himeko">Himeko
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="theresa">Theresa
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="fuka">Fu Hua
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="rita">Rita
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="yae">Yae Sakura
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="kallen">Kallen
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="liliya">Liliya
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="roza">Rozaliya
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="seele">Seele
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="durandal">Durandal
+                    </label>
+                </div>
+            </div>
+            
+            <div id="featurescb">
+                <h1>Features</h1>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="physical">Physical DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="fire">Fire DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="ice">Ice DMG
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="lightning">Lightning DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="freeze">Freeze
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="paralyse">Paralyze
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="stun">Stun
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="ignite">Ignite
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="bleed">Bleed
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="heavyatk">Heavy Attack
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="weaken">Weaken
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="impair">Impair
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="timemastery">Time Mastery
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="gather">Gather
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="heal">Heal
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="fastatk">Fast Attack
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="burst">Burst
+                    </label>
+                </div>
+            </div>
+            
+            
+
+
+
+        </div>
+        <div id="valklist">
+            <div>
+                <i>Kiana Kaslana</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+                
+                <img class="valkimg mech kiana physical stun burst timemastery" src="img/valk/kianawc.png" alt="">
+                <img class="valkimg mech kiana physical gather bleed" src="img/valk/kiana_ranger.png" alt="">
+                <img class="valkimg psy kiana physical heal impair burst timemastery" src="img/valk/kiana_dp.png" alt="">
+                <img class="valkimg bio kiana physical timemastery fastatk" src="img/valk/kiana_km.png" alt="">
+                <img class="valkimg bio kiana physical timemastery fastatk" src="img/valk/kiana_hov.png" alt="">
+            </div>
+            <div>
+                <i>Raiden Mei</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg bio mei physical bleed burst timemastery" src="img/valk/mei_ci.png" alt="">
+                <img class="valkimg bio mei physical burst fastatk paralyse" src="img/valk/mei_bs.png" alt="">     
+                <img class="valkimg mech mei physical fastatk" src="img/valk/mei_sd.png" alt="">
+                <img class="valkimg psy mei lightning paralyse" src="img/valk/mei_le.png" alt="">
+                
+            </div>
+            <div>
+                <i>Bronya Zaychik</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg psy bronya physical gather ignite timemastery" src="img/valk/bronya_vc.png" alt="">
+                <img class="valkimg psy bronya physical impair burst timemastery heal" src="img/valk/bronya_ymbk.png" alt="">
+                <img class="valkimg psy bronya physical stun weaken timemastery" src="img/valk/bronya_wd.png" alt="">
+                <img class="valkimg bio bronya physical freeze" src="img/valk/bronya_ss.png" alt="">
+                <img class="valkimg bio bronya physical stun" src="img/valk/bronya_bn.png" alt="">
+                <img class="valkimg mech bronya physical burst paralyse bleed timemastery" src="img/valk/bronya_db.png" alt="">
+                <img class="valkimg mech bronya ice freeze burst timemastery" src="img/valk/bronya_hor.png" alt="">
+            </div>
+            <div>
+                <i>Murata Himeko</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg bio himeko physical heavyatk stun timemastery" src="img/valk/himeko_battlestorm.png" alt="">
+                <img class="valkimg bio himeko physical heavyatk timemastery stun heal" src="img/valk/himeko_vt.png" alt="">
+                <img class="valkimg psy himeko ice freeze" src="img/valk/himeko_k.png" alt="">
+                <img class="valkimg mech himeko lightning heavyatk burst paralyse" src="img/valk/himeko_sf.png" alt="">
+                <img class="valkimg mech himeko fire ignite" src="img/valk/himeko_vk.png" alt="">
+                <img class="valkimg psy himeko fire ignite heavyatk burst" src="img/valk/himeko_br.png" alt="">
+                
+            </div>
+            <div>
+                <i>Theresa Apocalypse</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg psy theresa lightning paralyse timemastery fastatk" src="img/valk/theresa_vp.png" alt="">
+                <img class="valkimg bio theresa physical gather impair fastatk" src="img/valk/theresa_ch.png" alt="">
+                <img class="valkimg mech theresa physical bleed heavyatk burst fastatk" src="img/valk/theresa_ve.png" alt="">
+                <img class="valkimg psy theresa fire ignite burst fastatk" src="img/valk/theresa_sr.png" alt="">
+                <img class="valkimg bio theresa physical heavyatk bleed timemastery" src="img/valk/theresa_lk.png" alt="">
+
+            </div>
+            <div>
+                <i>Fu Hua</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg bio fuka physical bleed burst fastatk timemastery" src="img/valk/fuka_ns.png" alt="">
+                <img class="valkimg psy fuka physical stun heal timemastery" src="img/valk/fuka_va.png" alt="">
+                <img class="valkimg psy fuka fire weaken timemastery" src="img/valk/fuka_phoenix.png" alt="">
+                <img class="valkimg mech fuka lightning bleed burst fastatk timemastery" src="img/valk/fuka_sk.png" alt="">
+                <img class="valkimg psy fuka fire ignite timemastery gather" src="img/valk/fuka_ae.png" alt="">
+            
+            </div>
+            <div>
+
+                <i>Rita Rossweisse</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg psy rita physical timemastery" src="img/valk/rita_ur.png" alt="">
+                <img class="valkimg mech rita lightning paralyse" src="img/valk/rita_pi.png" alt="">
+                <img class="valkimg bio rita ice freeze burst" src="img/valk/rita_ak.png" alt="">
+
+            </div>
+            <div>
+                <i>Kallen Kaslana</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg mech kallen physical stun timemastery" src="img/valk/kallen_ri.png" alt="">
+                <img class="valkimg mech kallen physical impair fastatk" src="img/valk/kallen_s.png" alt="">
+                <img class="valkimg psy kallen ice freeze" src="img/valk/kallen_6th.png" alt="">
+
+            </div>
+            <div>
+                <i>Yae Sakura</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg bio yae physical bleed burst" src="img/valk/sakura_gm.png" alt="">
+                <img class="valkimg bio yae fire ignite timemastery" src="img/valk/sakura_fs.png" alt="">
+                <img class="valkimg mech yae ice freeze" src="img/valk/sakura_memeto.png" alt="">
+                <img class="valkimg bio yae lightning paralyse timemastery" src="img/valk/sakura_dj.png" alt="">
+
+            </div>
+            <div>
+                <i>Seele Vollerei</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg quantum seele physical burst" src="img/valk/seele_a.png" alt="">
+                <img class="valkimg quantum seele physical heavyatk timemastery" src="img/valk/seele_s.png" alt="">
+                
+            </div>
+            <div>
+                <i>Liliya Olenyeva</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg mech liliya physical freeze" src="img/valk/liliya_c1_icon.png" alt="">
+                
+            </div>
+            <div>
+                <i>Rozaliya Olenyeva</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg psy roza physical gather timemastery" src="img/valk/rozaliya_c1_icon.png" alt="">
+
+            </div>
+            <div>
+                <i>Durandal</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img class="valkimg quantum durandal fire ignite timemastery" src="img/valk/durandal_a.png" alt="">
+                <img class="valkimg quantum durandal physical heavyatk timemastery burst" src="img/valk/durandal_s.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    <!-- The Modal -->
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            
+        </div>
+        <img src="img/valk/kianawcbig.png" alt="">
+    </div>
+
+    
+
+    <!-- The Modal -->
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            
+        </div>
+        <img src="img/valk/kianawcbig.png" alt="">
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            
+        </div>
+        <img src="img/valk/kianawcbig.png" alt="">
+    </div>
+
+    <!-- The Modal -->
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            
+        </div>
+        <img src="img/valk/kianawcbig.png" alt="">
+    </div>
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div><div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div><div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div><div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div><div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+    <div class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <img src="img/valk/kianawcbig.png" alt="">
+        </div>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+        <div style="border-right: white solid; padding-right: 5%; padding: 2%;">
+            <p>Game Developer</p>
+            <a href="https://www.mihoyo.com/#/">
+                <img src="img\developer.png" alt="">
+            </a>
+
+            <p>Honkai Impact 3rd official website</p>
+            <a href="https://honkaiimpact3.mihoyo.com/asia/en-us">
+                <img src="img\logoweb.png" alt="">
+            </a>
+        </div>
+        <div style="padding: 2%;">
+            <div class="download">          
+                <a   href="https://apps.apple.com/app/id1299582178">
+                <img src="img\appstr.png" alt="">
+                </a>
+            </div>  
+            <div class="download">
+                <a href="https://play.google.com/store/apps/details?id=com.miHoYo.bh3oversea">
+                    <img src="img\ggplay.png" alt="">
+                </a>
+            </div>
+            <div class="download">
+                <a href="https://honkaiimpact3.mihoyo.com/asia/en-us/">
+                    <img src="img\pcver.png" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div style="padding: 2%;">
+            <p >Informations, images are taken from </p>
+                <ol>
+                    <a  href="https://honkaiimpact3.mihoyo.com/asia/en-us">Honkai Impact 3 (Asia)</a>
+                    <br>
+                    <a href="https://bh3.mihoyo.com/">Honkai Impact 3rd (China)</a>
+                    <br>
+                    <a href="https://www.houkai3rd.com/">Honkai Impact 3rd (Japan)</a>
+                    <br>
+                    <a  href="https://en.wikipedia.org/wiki/Honkai_Impact_3rd">Wikipedia</a>
+                    <br>
+            </ol>
+        
+        </div>
+    </div>
+
+
+
+
+
+    <script src="valk.js"></script>
+</body>
+</html>

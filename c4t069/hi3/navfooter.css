@@ -18,7 +18,9 @@ body, html{
  }
  .dropname{
    font-family: 'Armata', sans-serif;
-   font-size: larger;
+   font-size: 25px;
+   padding-bottom: 20px;
+   margin-bottom: 20px;
  }
  #drop i{
     font-size: larger;
@@ -32,7 +34,7 @@ body, html{
     color: white;
     background-color: aqua;
     /* margin-top: 20px; */
-    width: 130px;
+    width: 195px;
     border-right: rgb(40, 14, 134) solid;
     border-bottom: rgb(40, 14, 134) solid;
  }

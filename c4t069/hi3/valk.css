@@ -113,6 +113,7 @@
    width: 37%; /* Could be more or less, depending on screen size */
    height: fit-content;
    color: white;
+   margin-right: 0;
 }
  
  /* The Close Button */

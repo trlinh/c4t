@@ -3,25 +3,654 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Honkai Bosses</title>
     <link rel="stylesheet" href="boss.css">
+    <link rel="stylesheet" href="navfooter.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/089057264f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="navbar">
         <div id="drop">
-            <i class="fas fa-align-justify" >
+            
+            <i class="fas fa-align-justify" ></i>
+               
                 <div id="drop-content">
                     <a class="dropname" href="valk.html">Valkyries</a>
                     <a class="dropname" href="boss.html">Honkai Boss</a>
-                    <a class="dropname" href="attackmode.html">Abyss</a>
+                    <a class="dropname" href="attackmode.html">Attack Mode</a>
                 </div>
-            </i>
+    
         </div>
-        <a style="font-family: 'Orbitron', sans-serif; font-size:30px; color: white" href="home.html"><b>Honkai Impact 3</b> </a>
+        <a style="font-family: 'Orbitron', sans-serif; font-size:30px; color: white" href="home.html"><b>Honkai Bosses</b> </a>
     </div>
     <img id="logo" src="img\logo.png" alt="">
+
+    <div id="banner">
+        <img id="bannerimg" src="img/maboss.jpg" alt="">
+        <div id="intro">
+        </div>
+    </div>
+
+    <div id="boss">
+        <div id="filter" class="filter">
+            <div id="typecb">
+                <h1><i>Type</i></h1>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="mech"><img  src="img/features/MECH_(Icon).png" alt=""> Mech 
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="bio"><img  src="img/features/BIO_(Icon).png" alt=""> Biologic
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="psy"><img  src="img/features/PSY_(Icon).png" alt=""> Psychic
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="quantum"><img  src="img/features/QUA_(Icon).png" alt=""> Quantum
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="nonetype"><img  src="img/features/None_Type_(Icon).png" alt=""> None Type
+                    </label>
+                </div>
+            </div>
+            <div id="immunecb">
+                <h1><i>Resistance</i></h1>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="physicalre"><img src="img/features/physicdmg.jpg" alt=""> Physical DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="firere"><img src="img/features/firedmg.jpg" alt=""> Fire DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="icere"><img src="img/features/icedmg.jpg" alt=""> Ice DMG
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="lightningre"><img src="img/features/lightningdmg.jpg" alt=""> Lightning DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="freezere"><img src="img/features/freeze.jpg" alt=""> Freeze
+                    </label>
+                </div>
+                
+                
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="ignitere"><img src="img/features/ignite.jpg" alt=""> Ignite
+                    </label>
+                </div>
+                
+                
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="timemasteryre"><img src="img/features/timefracture.jpg" alt=""> Time Mastery
+                    </label>
+                </div>
+                               
+                
+                
+            </div>
+
+            <div id="weakcb">
+                <h1><i>Vulnerableness</i></h1>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="physicalvul"><img src="img/features/physicdmg.jpg" alt=""> Physical DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="firevul"><img src="img/features/firedmg.jpg" alt=""> Fire DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="icevul"><img src="img/features/icedmg.jpg" alt=""> Ice DMG
+                    </label>
+                </div>
+                <div class="checkbox"> 
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="lightningvul"><img src="img/features/lightningdmg.jpg" alt=""> Lightning DMG
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="freezevul"><img src="img/features/freeze.jpg" alt=""> Freeze
+                    </label>
+                </div>
+                
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="ignitevul"><img src="img/features/ignite.jpg" alt=""> Ignite
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="bleedvul"><img src="img/features/bleed.jpg" alt=""> Bleed
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="heavyatkvul"><img src="img/features/heavyatk.jpg" alt=""> Heavy Attack
+                    </label>
+                </div>
+                
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="gathervul"><img src="img/features/gather.jpg" alt=""> Gather
+                    </label>
+                </div>
+                
+                <div class="checkbox">
+                    <label for="">
+                        <input type="checkbox" onchange="change()" rel="fastatkvul"><img src="img/features/fastatk.jpg" alt=""> Fast Attack
+                    </label>
+                </div>
+                
+            </div>
+
+        </div>
+        <div id="bosslist" class="bosslist">
+            <div>
+                <i>A</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+                
+                <img data-modal="heimdall" class="bossimg mech heavyatkvul" src="img/boss/Heimdall_(Enemy)_(Icon).png" alt="">
+                <img data-modal="ak" class="bossimg bio icere freezere firevul ignitevul" src="img/boss/Argent_Knight_-_Artemis_(Enemy)_(Icon).png" alt="">
+                <img data-modal="assaka" class="bossimg psy icere firere" src="img/boss/Assaka_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>B</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="benares" class="bossimg nonetype physicalre icevul firevul lightningvul" src="img/boss/Benares_(Enemy)_(Icon).png" alt="">
+                <img data-modal="bk" class="bossimg mech lightningvul" src="img/boss/Bright_Knight_-_Excelsis_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>D</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="darkji" class="bossimg bio psy ignitevul bleedvul" src="img/boss/Dark_Jixuanyuan_(Enemy)_(Icon).png" alt="">
+                <img data-modal="doom" class="bossimg bio physicalvul gathervul fastatkvul" src="img/boss/Doom_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>H</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="hellmaru" class="bossimg nonetype firere ignitere icevul freezevul" src="img/boss/Hellmaru_(Enemy)_(Icon).png" alt="">
+                <img data-modal="hephaestus" class="bossimg mech" src="img/boss/Hephaestus_(Enemy)_(Icon).png" alt="">
+                <img data-modal="hor" class="bossimg bio lightningre physicalre" src="img/boss/Herrscher_of_the_Void_(Enemy)_(Icon).png" alt="">
+                <img data-modal="homu" class="bossimg nonetype" src="img/boss/HOMU_King_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>J</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="jizo" class="bossimg bio lightningre icere firere" src="img/boss/Jizo_Mitama_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>M</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="mexicatl" class="bossimg quantum timemasteryre" src="img/boss/Mexicatl_-_Umbreist_(Enemy)_(Icon).png" alt="">
+                <img data-modal="mht" class="bossimg mech" src="img/boss/MHT-3_Pax_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>P</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="padrino" class="bossimg mech lightningvul icevul firevul" src="img/boss/Padrino_(Enemy)_(Icon).png" alt="">
+                <img data-modal="parvati" class="bossimg psy icere" src="img/boss/Parvati_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>R</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="rpc" class="bossimg mech" src="img/boss/RPC-6626_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>S</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+                <img data-modal="sk" class="bossimg mech lightningre firere icere" src="img/boss/Shadow_Knight_(Enemy)_(Icon).png" alt="">
+            </div>
+            <div>
+                <i>T</i>
+                <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+
+
+                <img data-modal="tonatiuh" class="bossimg quantum heavyatkvul" src="img/boss/Tonatiuh_(Enemy)_(Icon).png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="heimdall" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Aesir Heimdall</h1>
+            <hr>
+            <img src="img/features/MECH_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/heavyatkbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Aesir_Heimdall_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="ak" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Argent Knight - Artemis</h1>
+            <hr>
+            <img src="img/features/BIO_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/freezebig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/ignitebig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/634px-Argent_Knight_-_Artemis_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="assaka" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Assaka</h1>
+            <hr>
+            <img src="img/features/PSY_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/firedmgbig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Assaka_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="benares" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Benares</h1>
+            <hr>
+            <img src="img/features/None_Type_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/physicdmgbig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Benares_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="bk" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Bright Knight - Excelsis</h1>
+            <hr>
+            <img src="img/features/MECH_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Bright_Knight_-_Excelsis_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="darkji" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Dark Jixuanyuan</h1>
+            <hr>
+            <img src="img/features/BIO_(Icon).png" alt="">
+            <img src="img/features/PSY_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/ignitebig.jpg" alt="">
+                <img src="img/features/bleedbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Dark_Jixuanyuan_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="doom" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Deathly Doom</h1>
+            <hr>
+            <img src="img/features/BIO_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/physicdmgbig.jpg" alt="">
+                <img src="img/features/gatherbig.jpg" alt="">
+                <img src="img/features/fastatkbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Doom_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="hellmaru" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Hellmaru</h1>
+            <hr>
+            <img src="img/features/None_Type_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/ignitebig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/freezebig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Hellmaru_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="hephaestus" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Hephaestus</h1>
+            <hr>
+            <img src="img/features/MECH_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+            
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Hephaestus_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="hor" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Herrscher of the Void </h1>
+            <hr>
+            <img src="img/features/BIO_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/physicdmgbig.jpg" alt="">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Herrscher_of_the_Void_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="homu" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>HOMU Emperor</h1>
+            <hr>
+            <img src="img/features/None_Type_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/HOMU_Emperor_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="jizo" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Jizo Mitama</h1>
+            <hr>
+            <img src="img/features/BIO_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Jizo_Mitama_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="mexicatl" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Mexicatl - Umbreist</h1>
+            <hr>
+            <img src="img/features/QUA_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/timefracturebig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Mexicatl_-_Umbreist_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="mht" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>MHT-3 Pax</h1>
+            <hr>
+            <img src="img/features/mech" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+            
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/MHT-3_Pax_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="padrino" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Padrino Legion</h1>
+            <hr>
+            <img src="img/features/MECH_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Padrino_Legion_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="parvati" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Parvati</h1>
+            <hr>
+            <img src="img/features/psy" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Parvati_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="rpc" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>RPC-6626</h1>
+            <hr>
+            <img src="img/features/MECH_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/RPC-6626_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="sk" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Shadow Knight</h1>
+            <hr>
+            <img src="img/features/mech" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+                <img src="img/features/icedmgbig.jpg" alt="">
+                <img src="img/features/firedmgbig.jpg" alt="">
+                <img src="img/features/lightningdmgbig.jpg" alt="">
+
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Shadow_Knight_(Enemy).jpg" alt="">
+    </div>
+
+    <div id="tonatiuh" class="myModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Tonatiuh</h1>
+            <hr>
+            <img src="img/features/QUA_(Icon).png" alt="">
+            <p>Resistance</p>
+            <div class="content-feature">
+
+            </div>
+            <p>Vulnerableness</p>
+            <div class="content-feature">
+                <img src="img/features/heavyatkbig.jpg" alt="">
+                
+            </div>
+                    
+        </div>
+        <img src="img/boss/Tonatiuh_(Enemy).png" alt="">
+    </div>
+    
 
 
 
@@ -76,5 +705,7 @@
         </div>
     </div>
 
+
+<script src="boss.js"></script>
 </body>
 </html>

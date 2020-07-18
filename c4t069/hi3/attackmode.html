@@ -3,29 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Attack Mode</title>
     <link rel="stylesheet" href="attackmode.css">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/089057264f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navfooter.css">
 </head>
 <body>
     <div id="navbar">
         <div id="drop">
-            <i class="fas fa-align-justify" >
+            <i class="fas fa-align-justify" > </i>
                 <div id="drop-content">
                     <a class="dropname" href="valk.html">Valkyries</a>
                     <a class="dropname" href="boss.html">Honkai Boss</a>
-                    <a class="dropname" href="attackmode.html">Abyss</a>
+                    <a class="dropname" href="attackmode.html">Attack Mode</a>
                 </div>
-            </i>
+           
         </div>
-        <a style="font-family: 'Orbitron', sans-serif; font-size:30px; color: white" href="home.html"><b>Honkai Impact 3</b> </a>
+        <a style="font-family: 'Orbitron', sans-serif; font-size:30px; color: white" href="home.html"><b>Attack Mode</b> </a>
     </div>
     <img id="logo" src="img\logo.png" alt="">
 
+    <div id="banner">
+        <img id="bannerimg" src="img/cykablyatbg.jpg" alt="">
+        <div id="intro">
+
+        </div>
+    </div>
 
 
 
+    <div id="atklist">
+        <div id="story">
+            <i>Story</i>
+            <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+            
+            <div style="display: flex;">
+                <img data-modal="opworld" class="atkimg" src="img/atkmode/sakurasamsara.jpg" alt="">
+                <div>
+                    <img data-modal="mainstory" class="atkimg" src="img/atkmode/mainstory.jpg" alt="">
+                    <img data-modal="chronicles" class="atkimg" src="img/atkmode/chronical.jpg" alt="">
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="coop">
+            <i>CO-OP Mode</i>
+            <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+            
+            <img data-modal="coopraid" class="atkimg" src="img/atkmode/coop.jpg" alt="">
+            <img data-modal="bounty" class="atkimg" src="img/atkmode/bounty.jpg" alt="">
+        </div>
+
+        <div id="ranking">
+            <i>Ranking Stage</i>
+            <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+            
+            <img data-modal="abyss" class="atkimg" src="img/atkmode/Infinity_Abyss_(Stage).png" alt="">
+            <img data-modal="memarena" class="atkimg" src="img/atkmode/Memorial_Arena_(Stage).png" alt="">
+        </div>
+
+        <div id="event">
+            <i>Event</i>
+            <div style="height: 3px; background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); margin-bottom: 20px;"></div>
+            
+            <img data-modal="material" class="atkimg" src="img/atkmode/materialwvent.jpg" alt="">
+            <img data-modal="trial" class="atkimg" src="img/atkmode/trial.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="opworld" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Open World</h1>
+            <hr>
+            <ol>
+                <p>Sakura Samsara, a feudal RPG-like area that tells the backstory of Yae Sakura and Higokumaru.</p>
+                <p>Schicksal HQ, a futuristic RPG-like area where Captains work with Einstein and Tesla.</p>
+                <p>A Post-Honkai Odyssey, a post-apocalyptic RPG-like area which depicts the city known as St. Fountain, 8 years after the 3rd Honkai War.</p>
+            </ol>
+
+        </div>
+        <img src="img/atkmode/sakurasamsara.jpg" alt="">
+        <img src="img/atkmode/schicksal.jpg" alt="">
+        <img src="img/atkmode/posthonkai.jpg" alt="">
+    </div>
+
+    <div id="chronicles" class="myModal" >
+        <!-- <div> -->
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Chronicles</h1>
+                <hr>
+                <p>The Chronicles will allow Captains to experience a lite version of Extra stages for various characters.</p>
+
+                
+            </div>
+            <img src="img/atkmode/800px-Battle_of_Schicksal_(Chronicles).png" alt="">
+        <!-- </div> -->
+        
+    </div>
+
+    <div id="coopraid" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>CO-OP Raid</h1>
+            <hr>
+            <p>Players team up to unlock legendary weapons</p>
+                       
+
+           
+        </div>
+        <img src="img/atkmode/coopraid1.jpg" alt="">
+        <img src="img/atkmode/coopraid2.jpg" alt="">
+    </div>
+
+    <div id="bounty" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Bounty Mark</h1>
+            <hr>
+            <p>Bounty Mark is a co-op experience where Captains can use Bounty Files to set up a room and team up with other Captains to face tough battles and gain rare materials for equipment crafting.</p>
+           
+            </div>
+        
+        <img src="img/atkmode/800px-Bounty_Mark_(Mission).png" alt="">
+        
+    </div>
+
+    <div id="abyss" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Quantum World</h1>
+            <hr>
+            <p>It rotated twice a week every week from Monday to Wednesday and Friday to Sunday. It requires no stamina and was not restricted in any way as long as your Valkyries were not defeated while inside of the event.</p>
+           
+            </div>
+        
+        <img src="img/atkmode/qsing.jpg" alt="">
+        <img src="img/atkmode/dirac.jpg" alt="">
+        
+    </div>
+
+    <div id="memarena" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Memorial Arena</h1>
+            <hr>
+            <p>Captains face off against challenging bosses from previous encounters. The virtual battlefield uses data to recreate enemies and have them battle with Valkyries with the aim of increasing Valkyries' battle prowess. Memorial Arena runs from Tuesday, 04:00 to Monday, 02:00 every week. Between Monday 02:00 and Tuesday 04:00, results are calculated and rewards are distributed.</p>
+           
+        </div>
+        
+        <img src="img/atkmode/memarena.jpg" alt="">
+        
+    </div>
+
+    <div id="mainstory" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Main Story</h1>
+            <hr>
+            <p>Main story of the game.</p>
+           
+        </div>
+        
+        
+    </div>
+
+    <div id="material" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Material Event</h1>
+            <hr>
+            <p>Weekday events are rotating material stages that change each day. Each day drops different material types, with the weekends dropping coins.</p>
+           
+        </div>
+        
+        <img src="img/atkmode/" alt="">
+        
+    </div>
+
+    <div id="trial" class="myModal" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Trial Event</h1>
+            <hr>
+           
+        </div>
+        
+        <img src="img/atkmode/trial.jpg" alt="">
+        
+    </div>
 
 
 
@@ -76,5 +265,7 @@
         </div>
     </div>
 
+
+    <script src="atkmode.js"></script>
 </body>
 </html>

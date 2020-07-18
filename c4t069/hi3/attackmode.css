@@ -1,81 +1,135 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
- }
-#drop-content{
-    display: none;
- }
- #drop{
-    color: #ffffff;
-    width: 50px;  
-    
- }
- i{
-    text-decoration: none;
- }
- .dropname{
-   font-family: 'Armata', sans-serif;
-   font-size: larger;
- }
- 
- #drop:hover  #drop-content{
-    display: block;
-    z-index: 2;
-    color: white;
-    background-color: aqua;
-    margin-top: 40px;
-    width: 130px;
-    border-right: rgb(40, 14, 134) solid;
-    border-bottom: rgb(40, 14, 134) solid;
- }
- #drop-content:hover{
-   display: block;
+body{
+   background-image: url("img/h.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+
+
+#banner{
+  position: relative;
+}
+#banner img{
+   /* background-image: url("img/ritateri.jpg"); */
+   width: 100%;
+   height: 100%;
    
+}
+#intro{
+  position: absolute;
+  top: 20%;
+  color: #ffffff;
+  left: 47%;
+  right: 7%;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+#atklist i{
+   
+   font-family: 'Impact', sans-serif;
+   color: #ffffff;
+   font-size: 35px;
+   margin-left: 3%;
+}
+#atklist div{
+   margin-bottom: 2%;
+   margin-left: 5%;
+}
+#atklist img{
+   margin-left: 5%;
+}
+
+.myModal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   /* overflow: auto; Enable scroll if needed */
+   background-color: rgb(255, 255, 255); /* Fallback color */
+   background-color: rgba(36, 34, 34, 0.7); /* Black w/ opacity */
+ }
+
+ .modal-content {
+   background-color: 
+   /* rgb(1, 179, 170,0.8) ; */
+   /* rgb(11, 161, 223,0.8); */
+   /* rgb(63, 119, 230,0.8); */
+   rgba(6, 48, 87, 0.8);
+   margin: 9% auto; /*from the top and centered */
+   padding: 20px;
+   border: 1px solid #888;
+   width: 37%; /* Could be more or less, depending on screen size */
+   height: fit-content;
+   color: white;
+   
+}
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
  }
  
- #logo{
-    position: fixed;
-    width: initial;
-    top: 50px;
-    z-index: 1;
- }
- #navbar{
-    position: fixed;
-    height: 40px;
-    z-index: 2;
-    background-color: rgb(40, 14, 134);
-    display: flex;
-    width: 330px;
-    border-right: #EB8100 solid;
-    border-bottom: #EB8100 solid;
- } 
-
- #footer{
-    background-image: url("img/bg2.jpg");
-    background-size: 100% 100% ;
-    display: flex;
-    justify-content: space-around;
-    color: rgb(198, 232, 243);
-    font-family: 'Roboto', sans-serif;
-
- } 
- #footer a{
-    color: rgb(198, 232, 243, 0.5);
- }
- footer a:hover{
-    color: white;
- }
- a{
+ .close:hover, .close:focus {
+   color: black;
    text-decoration: none;
    cursor: pointer;
  }
- a:hover{
-    color: white !important;
- }
- .download{
-    padding: 10px;
+
+ .atkimg:hover{
+   box-shadow: 0 0 10px #00c3ff;
+   /* border: 3px solid #00c3ff; */
+   border-radius: 20px;
+   /* transform: skewX(-15deg); */
+   box-sizing: content-box;
+  cursor: pointer;
+}
+
+#opworld .modal-content{
+   width:30%;
+   margin-top: 5%;
+}
+
+.myModal img{
+   height: 70%;
+   margin-top: 5% ;
+   margin-left: 2% ;
+   margin-right: 2%;
+}
+
+#chronicles .modal-content{
+   /* padding-right: 5%; */
+   margin-right: 5%;
+   width:15%;
+}
+#memarena .modal-content{
+   margin-right: 5%;
+}
+#memarena img{
+   margin-right: 20%;
+}
+#bounty .modal-content{
+   width: 20%;
+
+}
+#bounty img{
+   width: 65%;
+}
+#coop img{
+   height: 540px;
+}
+
+.modal-content h1{
+   font-family: 'Montserrat', sans-serif;
  }
 
+ .modal-content p{
+   font-family: 'Mukta', sans-serif;
+   font-size: 20px;
+ }

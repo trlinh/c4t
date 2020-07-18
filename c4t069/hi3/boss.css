@@ -1,82 +1,148 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
+body{
+    background-image: url("img/Post-Honkai_Odyssey_Photo_1 blur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
  }
-#drop-content{
-    display: none;
+
+#banner{
+    position: relative;
  }
- #drop{
+ #banner img{
+     width: 100%;
+     height: 100%;
+     
+ }
+ #intro{
+    position: absolute;
+    top: 20%;
     color: #ffffff;
-    width: 50px;  
+    left: 47%;
+    right: 7%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
     
  }
- i{
-    text-decoration: none;
+ #boss{
+     display: flex;
  }
- .dropname{
-   font-family: 'Armata', sans-serif;
-   font-size: larger;
+
+ .filter{
+    /* border: #EB8100 solid; */
+    height: 70%;
+    width: 25%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:  1.5%;
+    overflow-y: auto; 
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+ }
+ .fix-filter {
+    position: fixed;
+    top: 160px;
+    overflow-y: scroll; 
+    width: 22%;
  }
  
- #drop:hover  #drop-content{
-    display: block;
-    z-index: 2;
-    color: white;
-    background-color: aqua;
-    margin-top: 40px;
-    width: 130px;
-    border-right: rgb(40, 14, 134) solid;
-    border-bottom: rgb(40, 14, 134) solid;
+ .checkbox{
+    padding-left: 2%;
  }
- #drop-content:hover{
-   display: block;
-   
+ .checkbox img{
+    height: 25px;
  }
- 
- #logo{
-    position: fixed;
-    width: initial;
-    top: 50px;
-    z-index: 1;
+ #typecb #weakcb #immunecb{
+    margin-top: 100px;
+    padding-top: 100px;
  }
- #navbar{
-    position: fixed;
-    height: 40px;
-    z-index: 2;
-    background-color: rgb(40, 14, 134);
-    display: flex;
-    width: 330px;
-    border-right: #EB8100 solid;
-    border-bottom: #EB8100 solid;
- } 
-
- #footer{
-    background-image: url("img/bg2.jpg");
-    background-size: 100% 100% ;
-    display: flex;
-    justify-content: space-around;
-    color: rgb(198, 232, 243);
-    font-family: 'Roboto', sans-serif;
-
- } 
- #footer a{
-    color: rgb(198, 232, 243, 0.5);
- }
- footer a:hover{
-    color: white;
- }
- a{
-   text-decoration: none;
+ .bossimg:hover{
+    box-shadow: 0 0 10px #00c3ff;
+    /* border: 3px solid #00c3ff; */
+    border-radius: 20px;
+    /* transform: skewX(-15deg); */
+    box-sizing: content-box;
    cursor: pointer;
+}
+.bosslist{
+   padding-left: 2%; width: 75%;
+}
+.newbosslist{
+   padding-left: 29%; 
+  
+}
+#bosslist i{
+    font-family: 'Impact', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    margin-left: 3%;
+}
+
+.myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(36, 34, 34, 0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: 
+    /* rgb(1, 179, 170,0.8) ; */
+    /* rgb(11, 161, 223,0.8); */
+    /* rgb(63, 119, 230,0.8); */
+    rgba(6, 48, 87, 0.8);
+    margin: 5% auto; /*from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 37%; /* Could be more or less, depending on screen size */
+    height: fit-content;
+    color: white;
  }
- a:hover{
-    color: white !important;
- }
- .download{
-    padding: 10px;
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .myModal img{
+      height: 80%;
+      height: 70%;
+      margin-top: 5% ;
+      margin-left: 2% ;
+      margin-right: 3%;
+      max-width: 50%;
+  }
+  .modal-content  img{
+     width: 15%;
+     margin: 0;
+     
+  }
+ 
+  .content-feature img{
+     width: 40%;
+  }
+
+  .modal-content h1{
+   font-family: 'Montserrat', sans-serif;
  }
 
-
+ .modal-content p{
+   font-family: 'Mukta', sans-serif;
+   font-size: 20px;
+   margin-bottom: 0;
+ }

@@ -103,50 +103,52 @@ function filterResults(filters) {
 }
   
 
-// Get the modal
-var modal = document.querySelectorAll(".myModal");
+
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll(".valkimg");
+var modalBtns = [...document.querySelectorAll(".valkimg")];
+modalBtns.forEach(function(btn){
+    btn.onclick = function() {
+        var modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).style.display="flex";
+    }
+  });
 
 // Get the <span> element that closes the modal
-var span = document.querySelectorAll(".close");
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.myModal');
+    modal.style.display = "none";
+}});
+    
 
-// When the user clicks on the button, open the modal
-// btn[x].onclick = function() {
+
  
-// }
-for (var x=0; x<btn.length  ; x++){
-     var final = x;
-     btn[final].addEventListener( "click", ()=>{
-     
-        modal[final].style.display="block"
-    //  console.log(e)
-    //  console.log(x)
-    })
-    span[final].addEventListener("click",() => {
-        modal[final].style.display = "none";
-    } )
-    window.onclick = function(event) {
-        if (event.target == modal[final]) {
-          modal[final].style.display = "none";
-        }
-      } 
-
-    console.log(x)
-}
+window.onclick = function(event) {
+    if (event.target.className === "myModal") {
+        event.target.style.display = "none";
+    }};
+      
 
  
 
 //lambda expression
 
-var filter_fix = document.getElementById("filter")
-filter_fix.addEventListener("scroll", (e) =>{
+window.onscroll = function() {filter_fix()};
+var banner = document.getElementById("bannerimg")
+var valklist = document.getElementById("valklist")
+var sticky = banner.offsetHeight
+var filter= document.getElementById("filter")
+var limit = valklist.offsetHeight
+function filter_fix(){
     
-    if (document.body.scrollTop > 147) {
-      filter_fix.classList.add("fix-filter");
+    if (window.pageYOffset >= sticky & window.pageYOffset < limit) {
+        filter.classList.add("fix-filter");
+        valklist.classList.add("newvalklist")
     } else {
-      filter_fix.classList.remove("fix-filter");
+        filter.classList.remove("fix-filter");
+        valklist.classList.remove("newvalklist")
     }
     
-  })
+}
